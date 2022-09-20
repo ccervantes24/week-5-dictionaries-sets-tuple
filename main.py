@@ -73,43 +73,43 @@
 #################################################booleans######################################################
 # booleans
 # a boolean can only have 2 values -- true or False
-my_bool = 5 > 4
-print(my_bool)
+# my_bool = 5 > 4
+# print(my_bool)
 
 # > greater
 # < less
-# >= greater or equal
-# <= less or equal
-# == equal
-# != different or not equal to
+# # >= greater or equal
+# # <= less or equal
+# # == equal
+# # != different or not equal to
 
-# you can also construct booleans to see if values ar in a variable or not found
-my_list = [1,2,3,4,5,6,7]
-my_bool = 5 in my_list
-my_bool = 5 not in my_list #false
+# # you can also construct booleans to see if values ar in a variable or not found
+# my_list = [1,2,3,4,5,6,7]
+# my_bool = 5 in my_list
+# my_bool = 5 not in my_list #false
 
-# so we can see if we can make logical decisions if something is true or not
-var1 = True
-var2 = False
-print(type(var1))
-print(var1)
+# # so we can see if we can make logical decisions if something is true or not
+# var1 = True
+# var2 = False
+# print(type(var1))
+# print(var1)
 
-list = [1,2,3,4,5,6]
-control = 5 in list
-print(type(control))
-print(control)
+# list = [1,2,3,4,5,6]
+# control = 5 in list
+# print(type(control))
+# print(control)
 
-# Booleans Practice
+# # Booleans Practice
 
-# Make a comparison that returns a boolean and store the result (True/False) in a variable called test
-test = 3 >= 4
-print(test)
-# Check if 17834/34 is greater than 87*56 and print the boolean result to the screen using print()
-t = 17834/34 > 87*56
-print(t)
-# Check if the square root of 25 is equal to 5 and display the result (boolean) on the screen using print
-import math
-print(math.sqrt(25)==5)
+# # Make a comparison that returns a boolean and store the result (True/False) in a variable called test
+# test = 3 >= 4
+# print(test)
+# # Check if 17834/34 is greater than 87*56 and print the boolean result to the screen using print()
+# t = 17834/34 > 87*56
+# print(t)
+# # Check if the square root of 25 is equal to 5 and display the result (boolean) on the screen using print
+# import math
+# print(math.sqrt(25)==5)
 
 
 
@@ -118,12 +118,12 @@ print(math.sqrt(25)==5)
 
 # dictionaries
 # another data structure that stores data that can be unstructured
-# employee = {'first_name': 'steven',
-#             'last_name': 'pretti',
-#              'weight': 37.2,
-#               'size': 5.77
-#              'height:' 6}
-# print(employee['weight'])
+employee = {'first_name': 'steven',
+            'last_name': 'pretti',
+             'weight': 37.2,
+              'size': 5.77,
+             'height': 6}
+print(employee['weight'])
 
 #challenge 1
 # Create a dictionary called my_dict that stores the following information about a person:
@@ -131,8 +131,13 @@ print(math.sqrt(25)==5)
 # surname: Jurgens
 # age: 35
 # occupation: Journalist
-# The names of the keys and values must be equal to the ones indicated above.
+# # The names of the keys and values must be equal to the ones indicated above.
+my_dict2 = {'first_name': 'Karen',
+            'last_name': 'Jurgens',
+             'age': 35,
+              'occupation': 'Journalist'}
 
+print(my_dict2['first_name'])
 #challenge 2:
 # Use print to returns the second item of the list called points2, inside the following dictionary.
 
@@ -147,7 +152,8 @@ my_dict = {
         "points2": [10, 300, 15]
     }
 }
-# print(my_dict[]) #Use dictionary indices to extract the second item of points2
+# 
+#Use dictionary indices to extract the second item of points2
 
 #challenge 2
 # Update the information in our dictionary called my_dict (reassigning new values to the keys as appropriate), and add a new key called "country" (without a tilde). The new data is:
