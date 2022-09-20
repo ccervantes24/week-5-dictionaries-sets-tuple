@@ -14,51 +14,62 @@ coordindates2 = [(4, 5), (6, 7), (80, 34)]
 
 # we use parentheses not [] in tuples
 my_tuple1 = (1, 2, 3, 4)
-
+print(my_tuple1[1])
 # get the second item in the tuple1 above
 my_tuple = (1, 2, (10, 20), 4)
-
+print(my_tuple[1])
 # get the second item in the 3rd item above
 #hint multidimensional array thinking
-
+print(my_tuple[2][1])
 # place these numbers in separate variables from the tuple below
 t = (1, 2, 3)
-
+x,y,z = t
+print(x,y,z)
 #get me the length of the above tuple --- there are two ways of doing this... len(), count()...  use count if you want to get how many times an item appears in a tuple
-
+print(len (my_tuple))
 # Use a tuple method to count the number of times the value 2 appears in the following tuple, and display the result (integer) on the screen:
 
 my_tuple = (1, 2, 3, 2, 3, 1, 3, 2, 3, 3, 3, 1, 3, 2, 2, 1, 3, 2)
-
+print(my_tuple.count(2))
 # Convert the following tuple to a list, and store it in a variable called my_list.
 
 my_tuple = (1, 2, 3, 2, 3, 1, 3, 2)
-
+my_list = list(my_tuple)
+print(my_list)
+      
 #Extract the elements of the following tuple into four variables: a, b, c, d
 
 my_tuple = (1, 2, 3, 4)
 
+a,b,c,d = my_tuple
+print(a,b,c,d)
+################################################sets######################################################sets are similiar to tuple, the only difference is that they will not contain or print out any repeated elements
 
-#################################################sets######################################################
-
+my_firstSet = set((1,2,2,2,3,4,5))
+print(my_firstSet)
+print(2 in my_firstSet)
 
 # Join the following sets into one, called my_set_3:
 
-{1, 2, "three", "four"}
+s1 = {1, 2, "three", "four"}
 
-{"three", 4, 5}
+s2 = {"three", 4, 5}
 
+s3 = s1.union(s2)
+print(s3)
 
 # Remove a random item from the following set, using set methods.
 
 raffle = {"Rachel", "Monica", "Phoebe", "Joey", "Chandler", "Ross"}
-
-
-
+raffle.remove("Rachel") 
+print(raffle)
+raffle.remove("Phoebe") 
+print(raffle)
 # Add the name Gunther to the following set, using set methods:
 
 raffle = {"Rachel", "Monica", "Phoebe", "Joey", "Chandler", "Ross"}
-
+raffle.add("Gunther")
+print(raffle)
 #################################################booleans######################################################
 # booleans
 # a boolean can only have 2 values -- true or False
